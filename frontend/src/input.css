@@ -1,0 +1,18 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply outline-none w-full border rounded-sm p-2;
+}
+form > div {
+  @apply mt-2;
+}
+input::placeholder{
+    @apply text-slate-200
+}
+label {
+  @apply text-base;
+}
