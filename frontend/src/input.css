@@ -1,18 +1,25 @@
 /** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-50;
+}
 input {
-  @apply outline-none w-full border rounded-sm p-2;
+  @apply outline-none w-full border rounded p-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500;
 }
-form > div {
-  @apply mt-2;
-}
-input::placeholder{
-    @apply text-slate-200
+
+input::placeholder {
+  @apply text-slate-200 text-xs;
 }
 label {
-  @apply text-base;
+  @apply text-sm;
+}
+button {
+  @apply w-full bg-blue-500 text-white font-semibold py-1.5 px-4 rounded-lg
+   hover:bg-blue-600 transition;
 }

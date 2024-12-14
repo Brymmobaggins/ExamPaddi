@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="bg-black p-6 text-3xl font-normal">
+    <header class="bg-black p-3 text-3xl font-normal">
       <div class="text-white mx-4">ExamPaddi</div>
     </header>
     <main>
       <div
-        class="container border-2 border-slate-100 rounded-sm m-auto max-w-[500px] w-full mt-4 px-3 py-2"
+        class="container border-2 border-slate-100 rounded-sm m-auto max-w-[400px] w-full mt-4 
+         py-2 mx-auto sm:px-6 lg:px-8"
       >
-        <div class="text-2xl font-bold">Welcome to ExamPaddi</div>
-        <div>Sign up to access notes, past questions, and practice tests!</div>
-        <form action="">
+        <div class="text-medium font-bold">Welcome to ExamPaddi</div>
+        <div class="text-sm">Sign up to access notes, past questions, and practice tests!</div>
+        <form action="" class="space-y-4">
           <!-- full name -->
           <div>
             <label for="full-name">Full Name</label>
@@ -31,7 +32,7 @@
           </div>
           <!-- Email -->
           <div>
-            <label for="">Email</label>
+            <label for="e-mail">Email</label>
             <input
               type="text"
               class=""
@@ -40,9 +41,9 @@
             />
           </div>
 
-          <!-- Passwoord -->
+          <!-- Password -->
           <div>
-            <label for="">Password</label>
+            <label for="password">Password</label>
             <input
               type="password"
               class=""
@@ -50,20 +51,29 @@
               placeholder="enter a strong password"
             />
           </div>
+          <!-- Re-enter your password -->
           <div>
-            <label for="">Re-enter your password</label>
+            <label for="confirm-password">Re-enter your password</label>
             <input
               type="password"
               class=""
-              id="password"
+              id="confirm-password"
               placeholder="enter a strong password"
             />
           </div>
-          <small
-            >Password must be at least 8 characters and contain a number</small
+          <small class="text-xs"
+            ></small
+          >
+          <div>
+            <button id="signup-button" type="button" class="">Sign Up</button>
+          </div>
+          <small class="block text-center mt-2"
+            >Already have an account?
+            <a href="#" class="text-blue-500 hover:underline">Log in</a></small
           >
         </form>
       </div>
     </main>
+    <script src="main.js" defer></script>
   </body>
 </html>
