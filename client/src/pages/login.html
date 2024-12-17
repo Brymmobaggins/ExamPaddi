@@ -1,0 +1,49 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="bg-black p-3 text-3xl font-bold">
+      <div class="text-white mx-4">Login</div>
+    </header>
+    <main>
+      <div
+        class="container border-2 border-slate -100 rounded-sm m-auto max-w-[400px] w-full mt-4 py-2 mx-auto sm:px-6 lg:px-8"
+      >
+        <form action="" class="space-y-4">
+          <!-- Email -->
+          <div>
+            <label for="e-mail">Email</label>
+            <input type="text" class="" id="e-mail" placeholder="email" />
+          </div>
+
+          <!-- Password -->
+          <div>
+            <label for="password">Password</label>
+            <input type="password" class="" id="password" placeholder="Password" />
+          </div>
+          <small class="block text-center">
+            <a href="#" class="text-blue-500 hover:underline"">Forgot Password</a>
+          </small>
+          <div>
+            <button id="login-button" type="button" >Log in</button>
+          </div>
+          <small class="block text-center mt-1"
+            >Dont have an account?
+            <a
+              href="/client/dist/index.html"
+              class="text-blue-500 hover:underline"
+              >Sign up</a
+            ></small
+          >
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

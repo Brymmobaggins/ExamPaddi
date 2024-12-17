@@ -20,6 +20,6 @@ label {
   @apply text-sm;
 }
 button {
-  @apply w-full bg-blue-500 text-white font-semibold py-1.5 px-4 rounded-lg
+  @apply w-full bg-blue-500 text-white font-semibold py-1.5 px-4 
    hover:bg-blue-600 transition;
 }
