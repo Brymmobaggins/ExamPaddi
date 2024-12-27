@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-50;
+  @apply bg-black-haze-50;
 }
 input {
   @apply outline-none w-full border rounded p-1.5 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500;
